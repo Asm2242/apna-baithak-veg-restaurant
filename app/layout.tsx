@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "APNA BAITHAK — Pure Veg Restaurant | Eldeco City, Lucknow",
   description:
     "Apna Baithak Pure Vegetarian Restaurant — North Indian, Chinese, Chaap, Momos, Rolls, Main Course & more. Fresh taste, family-friendly. Order on 8299751213.",
+  icons: {
+    icon: "/logo-neon.svg",
+    shortcut: "/logo-neon.svg",
+    apple: "/logo-neon.svg",
+  },
 };
 
 export const viewport = {
