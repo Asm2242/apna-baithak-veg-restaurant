@@ -29,22 +29,9 @@ export default function Header() {
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-[68px] items-center justify-between gap-4">
           <a href="#home" className="flex items-center gap-3">
-            <div className="h-11 w-11 rounded-xl overflow-hidden bg-[#fff7ed] ring-1 ring-[#f59e0b]/30 shadow-[0_2px_12px_rgba(0,0,0,0.08)] grid place-items-center">
+            <div className="h-11 w-11 rounded-xl overflow-hidden bg-black ring-1 ring-[#f59e0b]/40 shadow-[0_0_12px_rgba(245,158,11,0.35)] grid place-items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/logo-main.png"
-                alt="AB"
-                className="h-full w-full object-cover"
-                onError={(e) => {
-                  const t = e.currentTarget as HTMLImageElement;
-                  if (t.src.includes("logo-main.png")) t.src = "/logo-main.svg";
-                  else if (t.src.includes("logo-main.svg")) t.src = "/logo-neon.svg";
-                  else {
-                    t.style.display = "none";
-                    (t.nextElementSibling as HTMLElement).style.display = "grid";
-                  }
-                }}
-              />
+              <img src="/logo-neon.svg" alt="AB" className="h-full w-full object-cover" onError={(e) => ((e.currentTarget.style.display = "none"), ((e.currentTarget.nextElementSibling as HTMLElement).style.display = "grid"))} />
               <span className="hidden h-full w-full place-items-center bg-[#ea580c] text-white font-black text-[18px]">AB</span>
             </div>
             <div>
